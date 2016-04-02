@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 ENV DEBIAN_FRONTEND noninteractive
-ENV PATH=$PATH:/usr/local/nginx/sbin
+ENV PATH $PATH:/usr/local/nginx/sbin
 
 EXPOSE 1935
 EXPOSE 80
