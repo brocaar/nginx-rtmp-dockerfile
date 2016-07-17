@@ -8,8 +8,8 @@ and some default settings for HLS live streaming.
 RTMP and HLS.**
 
 
-How to user
------------
+How to use
+----------
 
 1. Build and run the container (`docker build -t nginx_rtmp .` &
    `docker run -p 1935:1935 -p 8080:80 --rm nginx_rtmp`).
