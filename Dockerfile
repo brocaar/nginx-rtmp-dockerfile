@@ -26,16 +26,16 @@ RUN apt-get update && \
 
 # get nginx source
 WORKDIR /src
-RUN wget http://nginx.org/download/nginx-1.6.2.tar.gz && \
-  tar zxf nginx-1.6.2.tar.gz && \
-  rm nginx-1.6.2.tar.gz && \
+RUN wget http://nginx.org/download/nginx-1.7.5tar.gz && \
+  tar zxf nginx-1.7.5.tar.gz && \
+  rm nginx-1.7.5.tar.gz && \
 # get nginx-rtmp module
   wget https://github.com/arut/nginx-rtmp-module/archive/v1.1.6.tar.gz && \
   tar zxf v1.1.6.tar.gz && \
   rm v1.1.6.tar.gz
 
 # compile nginx
-WORKDIR /src/nginx-1.6.2
+WORKDIR /src/nginx-1.7.5
 RUN ./configure --add-module=/src/nginx-rtmp-module-1.1.6 \
   --conf-path=/config/nginx.conf \
   --error-log-path=/logs/error.log \
