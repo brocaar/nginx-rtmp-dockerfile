@@ -26,7 +26,7 @@ RUN apt-get update && \
 
 # get nginx source
 WORKDIR /src
-RUN wget http://nginx.org/download/nginx-1.7.5tar.gz && \
+RUN wget http://nginx.org/download/nginx-1.7.5.tar.gz && \
   tar zxf nginx-1.7.5.tar.gz && \
   rm nginx-1.7.5.tar.gz && \
 # get nginx-rtmp module
